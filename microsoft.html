@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./dist/main.css" />
+  </head>
+  <body>
+    <div class="container mx-auto">
+      <div class="navbar flex justify-between items-center p-4">
+        <div class="flex justify-center items-center md:order-2">
+          <div class="hamburger inline-block p-4 cursor-pointer md:hidden">
+            <div class="line h-0.5 w-6 my-1 bg-black"></div>
+            <div class="line h-0.5 w-6 my-1 bg-black"></div>
+            <div class="line h-0.5 w-6 my-1 bg-black"></div>
+          </div>
+          <div class="md:hidden search">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+              focusable="false"
+              style="
+                pointer-events: none;
+                display: inherit;
+                width: 100%;
+                height: 100%;
+              "
+              aria-hidden="true"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M16.296 16.996a8 8 0 11.707-.708l3.909 3.91-.707.707-3.909-3.909zM18 11a7 7 0 00-14 0 7 7 0 1014 0z"
+                fill-rule="evenodd"
+              ></path>
+            </svg>
+          </div>
+        </div>
+
+        <div class="logo text-center md:order-1 flex">
+          <div>
+            <img class="w-48 p-4" src="./imgs/mic.png" alt="" />
+          </div>
+          <div
+            class="features absolute inset-0 w-fit md:flex md:mx-4 md:space-x-2 bg-gray-200 md:w-auto md:bg-white -translate-x-96 md:translate-x-0 md:static"
+          >
+            <div class="fitem">Microsoft</div>
+            <div class="fitem">365</div>
+            <div class="fitem">Office</div>
+            <div class="fitem">Windows</div>
+            <div class="fitem">Surface</div>
+            <div class="fitem">Xbox</div>
+            <div class="fitem">Support</div>
+          </div>
+        </div>
+        <div class="cart text-center md:order-3 flex">
+          <div class="md:block hidden mr-6 w-4">All Microsoft SearchIcon</div>
+          <svg
+            class="w-4 mr-4"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            height="24"
+            viewBox="0 0 24 24"
+            width="24"
+            focusable="false"
+            style="
+              pointer-events: none;
+              display: inherit;
+              width: 100%;
+              height: 100%;
+            "
+            aria-hidden="true"
+          >
+            <path
+              clip-rule="evenodd"
+              d="M16.296 16.996a8 8 0 11.707-.708l3.909 3.91-.707.707-3.909-3.909zM18 11a7 7 0 00-14 0 7 7 0 1014 0z"
+              fill-rule="evenodd"
+            ></path>
+          </svg>
+          <div>Cart Account</div>
+        </div>
+      </div>
+      <div class="slider flex flex-col-reverse md:flex-row bg-white mx-16">
+        <div
+          class="left flex flex-col justify-center items-center md:items-baseline py-12"
+        >
+          <h1 class="text-2xl font-medium md:text-4xl mx-5">
+            Surface Laptop 4
+          </h1>
+          <p class="w-3/4 mx-5 text-left">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Exercitationem nisi qui vero voluptatibus, laborum quae?
+          </p>
+          <button class="text-white bg-black px-4 py-2 my-2 font-bold px2">
+            Shop now
+          </button>
+        </div>
+        <div class="right"></div>
+        <img src="./imgs/lap.jpg" class="md:w-1/3 h-36 object-contain" alt="" />
+      </div>
+      <div class="promo my-6 md:flex md:justify-evenly">
+        <div class="item flex items-center mx-4 space-x-2 md:flex-col">
+          <img class="w-10" src="/imgs/mic-ss.svg" alt="" />
+          <span class="font-bold">Choose your Micrsoft 365</span>
+        </div>
+        <div class="item flex items-center mx-4 space-x-2 md:flex-col">
+          <img class="w-10" src="/imgs/xbox.svg" alt="" />
+          <span class="font-bold">Buy Xbox 365</span>
+        </div>
+        <div class="item flex items-center mx-4 space-x-2 md:flex-col">
+          <img class="w-10" src="/imgs/mic-ss.svg" alt="" />
+          <span class="font-bold">Try windows 11</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
